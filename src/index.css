@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+body{
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.video {
+  width: 100%;
+  height: auto; /* Ensures the video maintains its aspect ratio */
+}
+
+.head-text{
+  
+  font-size: 25vw; /* Use viewport width (vw) unit for responsive font size */
+}
+
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw; /* Use viewport width (vw) unit for responsive font size */
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardcontainer{
+  border: 1px solid black;
+}
+.skillitem:hover{
+  background-color:rgb(255, 255, 255, 0.2); 
+  border-radius: 10px;
+}
+.socialicon:hover{
+  background-color:rgb(255, 255, 255, 0.2); 
+  border-radius: 10px;
+ 
+}
+
+.outercard{
+  width:25vw ;
+  height: 420px ;
+}
+.innercard{
+  width:250px;
+height:320px ;
+transition: transform 0.3s ease-in-out;
+
+}
+
+
+.outercard:hover .innercard{ 
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.text-with-border {
+  -webkit-text-stroke: 3px white; /* Red border color */
+   /* Make the text transparent to only show the border */
+}
+
+.project-card {
+  object-fit: contain;
+  margin-bottom: 20px;
+  max-height: 380px;
+  max-width: 350px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+
+  transition: width 0.3s, height 0.3s;
+}
+.project-card  img{
+  object-fit:fill;
+}
+
+.project-card :hover{
+  cursor: pointer;
+ 
+}
+
+
+
+.links a:hover{
+  cursor: pointer;
+  background-color:rgb(255, 255, 255, 0.2);
+  border-radius: 25px;
+  
+}
+.navbar:hover{
+  background-color: black;
+}
+
+
+.profimg{
+  perspective: 1000px; /* Adjust for desired depth */
+  overflow: hidden;
+  position: relative; 
+}
+
+
+
+.image-bg-removed {
+  display: block; /* Ensures the image fills the container */
+  position: relative; /* Stack the background-removed image on top */
+  z-index: 1; /* Ensure it's initially visible */
+  transition: opacity 0.5s ease-in-out; /* Shorter transition for fade-out */
+}
+.profileimg{
+  position: absolute;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transitions for both */
+  transform-style: preserve-3d;
+}
+
+.profimg:hover .image-bg-removed {
+  opacity: 1;
+
+   /* Fade out background-removed image on hover with shorter transition */
+}
+
+.profimg:hover .profileimg{
+  cursor: pointer;
+  transform: rotateX(40deg);
+  width: 18vw;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+:root:hover {
+  cursor: pointer;
+}
+
+
+:root{
+    font-family:"Poppins" ,sans-serif ;
+    
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
