@@ -5,8 +5,27 @@
 body{
   margin:0;
   padding: 0;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width:960px) {
+  .navitems{
+    flex-direction: column;
+    margin-left: 0px;
+    gap:1px;
+  
+  };
+
+  .navbar{
+    display: grid;
+  }
+}
+
 
 .video {
   width: 100%;
